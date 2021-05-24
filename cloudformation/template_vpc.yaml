@@ -1,6 +1,23 @@
-test
-test
-test
-test
-test
-test
+AWSTemplateFormatVersion: 2010-09-09
+# Description: |
+  
+# Parameters:
+  
+# Metadata:
+  
+# Mappings:
+  
+# Conditions:
+  
+Resources:
+  kimvpc:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: "10.0.0.0/16" # Required
+      Tags:
+        - Key: Name
+          Value: ltec-dev-kim2-vpc
+
+# Transform:
+  
+# Outputs:
